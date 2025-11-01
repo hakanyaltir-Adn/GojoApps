@@ -15,6 +15,29 @@ a {
   color: inherit;
 }
 
+/* Logo boyutları */
+.logo-small {
+  height: 36px;
+}
+
+.logo-centered {
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: 64px;
+}
+
+/* Site logo used on support pages: fixed top-left on larger screens, responsive size */
+.site-logo {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  /* Fluid, clamped height for different viewports */
+  height: clamp(40px, 6vw, 96px);
+  max-width: 220px;
+  width: auto;
+  z-index: 1000;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -39,6 +62,13 @@ a {
 .nav-links a {
   color: #ffffff;
   font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFD166;
 }
 
 /* Ana Sayfa */
@@ -70,16 +100,25 @@ a {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: bold;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .btn:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #FB6A4A;
 }
 
 /* App Sayfası */
 .apps-content {
-  padding: 2rem;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.apps-content h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .app-grid {
@@ -93,6 +132,8 @@ a {
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .app-card img {
@@ -100,6 +141,16 @@ a {
   max-height: 180px;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.app-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-card p {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -112,7 +163,21 @@ a {
 
 /* Support Sayfası */
 .support-content {
-  padding: 2rem;
+  max-width: 600px;
+  /* provide extra top space so fixed logo doesn't overlap content */
+  margin: 6rem auto 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.support-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.support-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .faq, .contact, .repo {
@@ -138,7 +203,7 @@ footer {
 
 /* Mobil uyumluluk */
 @media (max-width: 600px) {
-  .button-group {
+  .navbar {
     flex-direction: column;
     align-items: center;
   }
@@ -146,5 +211,26 @@ footer {
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-centered {
+    height: 48px;
+  }
+
+  /* On small screens keep logo in flow (not fixed) and reduce size */
+  .site-logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+    margin: 0 auto 1rem 0;
+    height: 48px;
+    max-width: 160px;
   }
 }
