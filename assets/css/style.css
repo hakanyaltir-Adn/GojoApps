@@ -109,7 +109,10 @@ header {
 
 .logo img {
   height: 40px;
+  max-height: 40px;
   width: auto;
+  max-width: 150px;
+  object-fit: contain;
 }
 
 .logo-text {
