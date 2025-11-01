@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Habit Builder - Help Your Children Build Positive Habits</title>
+  <meta name="description" content="Transform your child's daily routine with gamification. Kids Habit Builder helps families build positive habits through fun tasks, rewards, and motivation. 7 days free trial!" />
+  <meta name="keywords" content="kids habit tracker, family task manager, children reward system, parenting app, habit builder for kids, positive parenting tools" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kids Habit Builder - Positive Habits Through Gamification" />
+  <meta property="og:description" content="Help your children develop positive habits with fun tasks and rewards. COPPA compliant, ad-free." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hakanyaltir-adn.github.io/GojoApps/apps/kids-habit-builder/" />
+  
+  <!-- Stylesheets & Fonts -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#7C3AED" />
+  
+  <style>
+    /* App-specific styles */
+    .hero-app {
+      background: linear-gradient(135deg, #F5F3FF 0%, #7C3AED 20%, #9333ea 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-app h1,
+    .hero-app .hero-subtitle {
+      color: white;
+    }
+    
+    .hero-app h1 {
+      background: none;
+      -webkit-text-fill-color: white;
+    }
+    
+    .trial-badge {
+      display: inline-block;
+      background: var(--warm-yellow);
+      color: var(--dark-text);
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .store-buttons-hero {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .store-btn {
+      display: inline-block;
+      padding: 0;
+    }
+    
+    .store-btn img {
+      height: 56px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+    
+    .store-btn:hover img {
+      transform: scale(1.05);
+    }
+    
+    .coming-soon-badge {
+      display: inline-block;
+      background: var(--fresh-green);
+      color: white;
+      padding: 0.375rem 1rem;
+      border-radius: 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-left: 1rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .screenshots-container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+    
+    .screenshot-placeholder {
+      width: 280px;
+      height: 560px;
+      background: linear-gradient(135deg, #F5F3FF 0%, #7C3AED 100%);
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    
+    .problem-solution {
+      background: var(--light-gray);
+      padding: 4rem 0;
+    }
+    
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .comparison-card {
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      text-align: center;
+    }
+    
+    .problem-card {
+      background: #FEE2E2;
+      border: 2px solid #EF4444;
+    }
+    
+    .solution-card {
+      background: #D1FAE5;
+      border: 2px solid var(--fresh-green);
+    }
+    
+    .comparison-card h3 {
+      margin-bottom: 1rem;
+    }
+    
+    .comparison-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .pricing-section {
+      background: white;
+      padding: 4rem 0;
+    }
+    
+    .pricing-card {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--light-purple-bg);
+      border: 3px solid var(--primary-purple);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .best-value-badge {
+      position: absolute;
+      top: -1rem;
+      right: 2rem;
+      background: var(--warm-yellow);
+      color: var(--dark-text);
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+    
+    .price {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--primary-purple);
+      margin: 1rem 0;
+    }
+    
+    .price-small {
+      font-size: 1.5rem;
+      color: var(--gray-text);
+    }
+    
+    .testimonials-section {
+      background: var(--light-gray);
+      padding: 4rem 0;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .testimonial-rating {
+      color: var(--warm-yellow);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      color: var(--gray-text);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--dark-text);
+    }
+    
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .screenshot-placeholder {
+        width: 240px;
+        height: 480px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../assets/img/gojoapps-logo.png" alt="GojoApps Logo" />
+          <span class="logo-text">GojoApps</span>
+        </a>
+      </div>
+      
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="index-tr.html">🇹🇷 Türkçe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-app">
+    <div class="hero-content">
+      <div class="trial-badge">⭐ 7 Days Free Trial!</div>
+      <h1>Help Your Children Build Positive Habits</h1>
+      <p class="hero-subtitle">
+        Transform daily tasks into fun adventures! Kids Habit Builder uses gamification 
+        to motivate children while giving parents full control. Watch your kids develop 
+        responsibility and positive habits naturally.
+      </p>
+      
+      <div class="store-buttons-hero">
+        <a href="#" class="store-btn" aria-label="Download on App Store">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on App Store" />
+        </a>
+        <a href="#" class="store-btn" aria-label="Get it on Google Play">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height: 68px; margin-top: -6px;" />
+        </a>
+      </div>
+      
+      <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.9;">
+        <span class="coming-soon-badge">Coming November 2025</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem-Solution Section -->
+  <section class="problem-solution">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Daily Struggle Parents Face</h2>
+        <p class="section-description">
+          Sound familiar? There's a better way.
+        </p>
+      </div>
+      
+      <div class="comparison-grid">
+        <div class="comparison-card problem-card">
+          <div class="comparison-icon">😫</div>
+          <h3>Without Kids Habit Builder</h3>
+          <ul style="text-align: left; line-height: 2;">
+            <li>❌ Constant nagging and reminders</li>
+            <li>❌ Daily battles over chores</li>
+            <li>❌ No motivation for kids</li>
+            <li>❌ Inconsistent routines</li>
+            <li>❌ Stressful mornings & evenings</li>
+          </ul>
+        </div>
+        
+        <div class="comparison-card solution-card">
+          <div class="comparison-icon">🎉</div>
+          <h3>With Kids Habit Builder</h3>
+          <ul style="text-align: left; line-height: 2;">
+            <li>✅ Kids excited about tasks</li>
+            <li>✅ Self-motivated children</li>
+            <li>✅ Clear rewards system</li>
+            <li>✅ Consistent daily routines</li>
+            <li>✅ Peaceful, organized home</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section id="features" class="section" style="background: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything Parents Need</h2>
+        <p class="section-description">
+          Powerful features wrapped in a beautiful, easy-to-use interface
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">👪</div>
+          <h3>Multi-Child Support</h3>
+          <p>Manage tasks and rewards for all your children from one account. Each child gets their own profile and progress tracking.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Flexible Task System</h3>
+          <p>Create daily, weekly, or monthly tasks. Set custom points for each task based on difficulty and importance.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>Custom Rewards</h3>
+          <p>Define your own rewards with point values. From extra screen time to special treats - you're in control.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Parent Approval</h3>
+          <p>Review and approve completed tasks before awarding points. Ensure quality and teach accountability.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Progress Tracking</h3>
+          <p>Visual progress bars and statistics show how each child is doing. Celebrate milestones together!</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Motivational Messages</h3>
+          <p>Built-in encouragement system keeps kids motivated and excited about completing tasks.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Child-Safe Design</h3>
+          <p>COPPA compliant. No ads, no tracking, no external content. Only parents can upload photos or create content.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Two Languages</h3>
+          <p>Full support for Turkish and English with automatic locale detection. Switch anytime in settings.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Cross-Platform</h3>
+          <p>Works seamlessly on iOS and Android. Real-time sync across all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section" style="background: var(--light-gray);">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p class="section-description">
+          Simple setup, powerful results
+        </p>
+      </div>
+      
+      <div class="features-grid" style="max-width: 900px; margin: 3rem auto 0;">
+        <div class="feature-card" style="background: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">1️⃣</div>
+          <h3>Parents Set Up</h3>
+          <p>Create child profiles, define tasks (brush teeth, make bed, homework), and set up rewards (extra playtime, treats, special activities).</p>
+        </div>
+        
+        <div class="feature-card" style="background: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">2️⃣</div>
+          <h3>Kids Complete Tasks</h3>
+          <p>Children log in, see their tasks, complete them, and mark them as done. They can track their points and see available rewards.</p>
+        </div>
+        
+        <div class="feature-card" style="background: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
+          <h3>Parents Review</h3>
+          <p>You get notifications when tasks are marked complete. Approve or reject based on quality. Award points instantly.</p>
+        </div>
+        
+        <div class="feature-card" style="background: white;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">4️⃣</div>
+          <h3>Kids Earn Rewards</h3>
+          <p>When children have enough points, they can claim rewards. You approve the redemption, and everyone celebrates the achievement!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Beautiful, Intuitive Design</h2>
+        <p class="section-description">
+          Child-friendly interface that kids love and parents trust
+        </p>
+      </div>
+      
+      <div class="screenshots-container">
+        <div class="screenshot-placeholder">📱</div>
+        <div class="screenshot-placeholder">✨</div>
+        <div class="screenshot-placeholder">🎯</div>
+      </div>
+      
+      <p style="text-align: center; color: var(--gray-text); margin-top: 2rem;">
+        Screenshots coming soon!
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, Transparent Pricing</h2>
+        <p class="section-description">
+          Start with a 7-day free trial. Cancel anytime.
+        </p>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="best-value-badge">🏆 Best Value</div>
+        <h3>Premium Family Plan</h3>
+        <div class="price">
+          $9.99<span class="price-small">/month</span>
+        </div>
+        <p style="color: var(--gray-text); margin-bottom: 1.5rem;">
+          or $69.99/year (save 42%)
+        </p>
+        
+        <ul style="text-align: left; line-height: 2.5; max-width: 400px; margin: 2rem auto;">
+          <li>✅ Unlimited children</li>
+          <li>✅ Unlimited tasks & rewards</li>
+          <li>✅ Photo attachments</li>
+          <li>✅ Progress tracking & statistics</li>
+          <li>✅ Cloud sync across devices</li>
+          <li>✅ Priority support</li>
+          <li>✅ Ad-free experience</li>
+          <li>✅ All future updates included</li>
+        </ul>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px dashed var(--primary-purple);">
+          <div style="font-weight: 600; font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-purple);">
+            🎁 7 Days Completely Free!
+          </div>
+          <p style="color: var(--gray-text); font-size: 0.875rem;">
+            No credit card required during trial. Cancel anytime.
+          </p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+          <a href="#" class="btn btn-primary btn-large">Start Free Trial</a>
+        </div>
+      </div>
+      
+      <p style="text-align: center; color: var(--gray-text); margin-top: 2rem; font-size: 0.875rem;">
+        Prices shown are for international markets. Turkish pricing: ₺99.99/month or ₺699.99/year.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Parents Are Saying</h2>
+        <p class="section-description">
+          Join happy families already using Kids Habit Builder
+        </p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "Game changer! My 7-year-old now makes his bed without being asked. 
+            The reward system really works!"
+          </p>
+          <p class="testimonial-author">— Sarah M., Mother of 2</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "Finally, no more battles over homework and chores. My kids compete 
+            to earn points. Best parenting tool ever."
+          </p>
+          <p class="testimonial-author">— Michael T., Father of 3</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "Love how simple it is to set up. My kids understand it immediately 
+            and they're actually excited about responsibilities now!"
+          </p>
+          <p class="testimonial-author">— Jessica L., Mother of 1</p>
+        </div>
+      </div>
+      
+      <p style="text-align: center; color: var(--gray-text); margin-top: 2rem; font-size: 0.875rem;">
+        * Testimonials are from beta testers
+      </p>
+    </div>
+  </section>
+
+  <!-- Trust Badges Section -->
+  <section class="section" style="background: white;">
+    <div class="container" style="text-align: center;">
+      <h2 style="margin-bottom: 2rem;">Safe, Secure, Trusted</h2>
+      <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 2rem;">
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🔒</div>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">COPPA Compliant</div>
+          <div style="color: var(--gray-text); font-size: 0.875rem;">Child safety first</div>
+        </div>
+        
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🛡️</div>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">GDPR & CCPA</div>
+          <div style="color: var(--gray-text); font-size: 0.875rem;">Data privacy protected</div>
+        </div>
+        
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem;">🚫</div>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">No Ads</div>
+          <div style="color: var(--gray-text); font-size: 0.875rem;">100% ad-free experience</div>
+        </div>
+        
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem;">☁️</div>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">Encrypted</div>
+          <div style="color: var(--gray-text); font-size: 0.875rem;">Bank-level security</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="container">
+    <div class="cta-section">
+      <h2>Ready to Transform Your Family Routine?</h2>
+      <p>Start your 7-day free trial today. No credit card required.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-secondary btn-large">Start Free Trial</a>
+      </div>
+      <p style="margin-top: 1.5rem; font-size: 0.875rem; opacity: 0.9;">
+        Available on iOS and Android • Coming November 2025
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Kids Habit Builder</h3>
+        <p style="color: #9CA3AF; margin-top: 0.5rem;">
+          Part of the GojoApps family.
+          Building positive habits, one task at a time.
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="support.html">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="#">Child Safety</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kids Habit Builder by GojoApps. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.getElementById('navLinks').classList.remove('active');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

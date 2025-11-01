@@ -1,0 +1,12 @@
+{
+  "name": "gojoapps",
+  "version": "1.0.0",
+  "description": "GOJOAPPs favicon & PWA icon generator setup",
+  "type": "module",
+  "scripts": {
+    "build:icons": "node generate-icons.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  }
+}

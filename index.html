@@ -3,34 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GojoApps</title>
+  <title>GojoApps - Apps that make life easier</title>
+  <meta name="description" content="Discover innovative mobile apps designed to simplify your daily life. Family apps, productivity tools, and more." />
+  <meta name="keywords" content="mobile apps, family apps, productivity, iOS, Android, habit tracker" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="GojoApps - Apps that make life easier" />
+  <meta property="og:description" content="Innovative mobile apps for families and productivity" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hakanyaltir-adn.github.io/GojoApps/" />
+  
+  <!-- Stylesheets & Fonts -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#7C3AED" />
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo">
         <a href="index.html">
-          <img src="assets/img/gojoapps-logo.png" alt="GojoApps Logo" class="logo-small" />
+          <img src="assets/img/gojoapps-logo.png" alt="GojoApps Logo" />
+          <span class="logo-text">GojoApps</span>
         </a>
       </div>
-      <ul class="nav-links">
-        <li><a href="apps.html">Apps</a></li>
-        <li><a href="support.html">Support</a></li>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="index-tr.html">🇹🇷 Türkçe</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="home-content">
-    <img src="assets/img/gojoapps-logo.png" alt="GojoApps Logo" class="logo-centered" />
-    <h1>GojoApps</h1>
-    <p>Apps that make life easier.</p>
-    <div class="button-group">
-      <a href="apps.html" class="btn">Explore Apps</a>
-      <a href="support.html" class="btn">Get Support</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Apps that make life easier</h1>
+      <p class="hero-subtitle">
+        We create beautiful, intuitive mobile apps that solve real problems. 
+        From family management to productivity tools — discover apps designed with care.
+      </p>
+      <div class="hero-buttons">
+        <a href="#apps" class="btn btn-primary btn-large">Explore Our Apps</a>
+        <a href="#about" class="btn btn-secondary btn-large">Learn More</a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Apps Section -->
+  <section id="apps" class="apps-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Apps</h2>
+        <p class="section-description">
+          Innovative solutions for modern families and individuals
+        </p>
+      </div>
+      
+      <div class="apps-grid">
+        <!-- Kids Habit Builder App Card -->
+        <div class="app-card">
+          <div class="app-card-image" style="background: linear-gradient(135deg, #F5F3FF 0%, #7C3AED 100%);">
+            <!-- Placeholder for app screenshot -->
+          </div>
+          <div class="app-card-content">
+            <div class="app-card-header">
+              <div>
+                <span class="app-category">👨‍👩‍👧‍👦 Family & Education</span>
+                <h3>Kids Habit Builder</h3>
+              </div>
+            </div>
+            
+            <div class="app-status">
+              <div class="status-badge"></div>
+              <span>Coming Soon - November 2025</span>
+            </div>
+            
+            <p class="app-description">
+              Help your children develop positive habits through gamification. 
+              Set tasks, reward achievements, and watch them grow — all in a fun, 
+              child-friendly environment that parents can control.
+            </p>
+            
+            <div class="app-features">
+              <span class="feature-tag">✨ Gamification</span>
+              <span class="feature-tag">🏆 Rewards System</span>
+              <span class="feature-tag">👪 Multi-Child Support</span>
+              <span class="feature-tag">🔒 COPPA Compliant</span>
+              <span class="feature-tag">🌍 Turkish & English</span>
+            </div>
+            
+            <a href="apps/kids-habit-builder/index.html" class="app-link">
+              Learn More →
+            </a>
+          </div>
+        </div>
+        
+        <!-- Placeholder for Future Apps -->
+        <div class="app-card" style="opacity: 0.7; cursor: default;">
+          <div class="app-card-image" style="background: linear-gradient(135deg, #F0F9FF 0%, #10B981 100%);">
+          </div>
+          <div class="app-card-content">
+            <span class="app-category">🚀 Coming Soon</span>
+            <h3>More Apps Coming</h3>
+            <p class="app-description">
+              We're working on exciting new projects. Stay tuned for updates!
+            </p>
+            <div class="app-features">
+              <span class="feature-tag">📱 Mobile First</span>
+              <span class="feature-tag">🎯 Problem Solving</span>
+              <span class="feature-tag">💜 Made with Care</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Our Apps?</h2>
+        <p class="section-description">
+          Built with modern technology and user experience in mind
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Beautiful Design</h3>
+          <p>Modern, intuitive interfaces that users love. Every pixel matters.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy First</h3>
+          <p>Your data is yours. GDPR, COPPA compliant. No tracking, no ads.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast & Reliable</h3>
+          <p>Built with cutting-edge technology for smooth performance.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Multi-Language</h3>
+          <p>Turkish and English support with automatic locale detection.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Cross-Platform</h3>
+          <p>Available on both iOS and Android. One account, all devices.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💜</div>
+          <h3>Made with Care</h3>
+          <p>Every feature is thoughtfully designed to solve real problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h2 style="margin-bottom: 1.5rem;">About GojoApps</h2>
+      <p style="font-size: 1.125rem; color: var(--gray-text); line-height: 1.8; margin-bottom: 2rem;">
+        We're a team passionate about creating mobile apps that make a difference. 
+        Our mission is simple: solve real problems with beautiful, easy-to-use solutions.
+        Whether it's helping families build better habits or improving daily productivity, 
+        we focus on what matters most — the people using our apps.
+      </p>
+      <p style="font-size: 1.125rem; color: var(--gray-text); line-height: 1.8;">
+        Every app we create is built with attention to detail, user privacy, and 
+        modern technology. We believe in transparent development, user feedback, 
+        and continuous improvement.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="container">
+    <div class="cta-section">
+      <h2>Ready to Try Our Apps?</h2>
+      <p>Join thousands of users who have simplified their lives with GojoApps</p>
+      <div class="hero-buttons">
+        <a href="#apps" class="btn btn-secondary btn-large">View All Apps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>GojoApps</h3>
+        <p style="color: #9CA3AF; margin-top: 0.5rem;">
+          Apps that make life easier.
+          Built with care, designed for everyone.
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Apps</h3>
+        <ul>
+          <li><a href="apps/kids-habit-builder/index.html">Kids Habit Builder</a></li>
+          <li><a href="#apps">More Coming Soon</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="apps/kids-habit-builder/privacy.html">Privacy Policy</a></li>
+          <li><a href="apps/kids-habit-builder/terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 GojoApps. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            document.getElementById('navLinks').classList.remove('active');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
