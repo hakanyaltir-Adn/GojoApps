@@ -1,0 +1,76 @@
+#!/bin/bash
+sed -i '' \
+  -e 's/The Daily Struggle Parents Face/Ebeveynlerin Karşılaştığı Günlük Zorluk/g' \
+  -e 's/Sound familiar? There'\''s a better way\./Tanıdık geliyor mu? Daha iyi bir yol var./g' \
+  -e 's/Without Kids Habit Builder/Alışkanlık Ustası Olmadan/g' \
+  -e 's/With Kids Habit Builder/Alışkanlık Ustası İle/g' \
+  -e 's/Constant nagging and reminders/Sürekli sızlanma ve hatırlatmalar/g' \
+  -e 's/Daily battles over chores/Ev işleri için günlük kavgalar/g' \
+  -e 's/No motivation for kids/Çocuklar için motivasyon yok/g' \
+  -e 's/Inconsistent routines/Tutarsız rutinler/g' \
+  -e 's/Stressful mornings & evenings/Stresli sabahlar ve akşamlar/g' \
+  -e 's/Kids excited about tasks/Görevler için heyecanlı çocuklar/g' \
+  -e 's/Self-motivated children/Kendi kendini motive eden çocuklar/g' \
+  -e 's/Clear rewards system/Net ödül sistemi/g' \
+  -e 's/Consistent daily routines/Tutarlı günlük rutinler/g' \
+  -e 's/Peaceful, organized home/Huzurlu, organize ev/g' \
+  -e 's/Everything Parents Need/Ebeveynlerin İhtiyaç Duyduğu Her Şey/g' \
+  -e 's/Powerful features wrapped in a beautiful, easy-to-use interface/Güzel, kullanımı kolay bir arayüze sarılmış güçlü özellikler/g' \
+  -e 's/Multi-Child Support/Çoklu Çocuk Desteği/g' \
+  -e 's/Manage tasks and rewards for all your children from one account/Tüm çocuklarınızın görev ve ödüllerini tek hesaptan yönetin/g' \
+  -e 's/Flexible Task System/Esnek Görev Sistemi/g' \
+  -e 's/Custom Rewards/Özel Ödüller/g' \
+  -e 's/Parent Approval/Ebeveyn Onayı/g' \
+  -e 's/Progress Tracking/İlerleme Takibi/g' \
+  -e 's/Motivational Messages/Motivasyonel Mesajlar/g' \
+  -e 's/Child-Safe Design/Çocuk Güvenli Tasarım/g' \
+  -e 's/Two Languages/İki Dil/g' \
+  -e 's/Cross-Platform/Platform Bağımsız/g' \
+  -e 's/How It Works/Nasıl Çalışır/g' \
+  -e 's/Simple setup, powerful results/Basit kurulum, güçlü sonuçlar/g' \
+  -e 's/Parents Set Up/Ebeveynler Kurar/g' \
+  -e 's/Kids Complete Tasks/Çocuklar Görevleri Tamamlar/g' \
+  -e 's/Parents Review/Ebeveynler İnceler/g' \
+  -e 's/Kids Earn Rewards/Çocuklar Ödül Kazanır/g' \
+  -e 's/Beautiful, Intuitive Design/Güzel, Sezgisel Tasarım/g' \
+  -e 's/Child-friendly interface that kids love and parents trust/Çocukların sevdiği ve ebeveynlerin güvendiği çocuk dostu arayüz/g' \
+  -e 's/Screenshots coming soon!/Ekran görüntüleri yakında!/g' \
+  -e 's/Simple, Transparent Pricing/Basit, Şeffaf Fiyatlandırma/g' \
+  -e 's/Start with a 7-day free trial. Cancel anytime\./7 günlük ücretsiz deneme ile başlayın. İstediğiniz zaman iptal edin./g' \
+  -e 's/Premium Family Plan/Premium Aile Paketi/g' \
+  -e 's/Best Value/En İyi Değer/g' \
+  -e 's/or.*year (save 42%)/veya ₺699.99\/yıl (%42 tasarruf)/g' \
+  -e 's/Unlimited children/Sınırsız çocuk/g' \
+  -e 's/Unlimited tasks & rewards/Sınırsız görev ve ödüller/g' \
+  -e 's/Photo attachments/Fotoğraf ekleri/g' \
+  -e 's/Cloud sync across devices/Cihazlar arası bulut senkronizasyonu/g' \
+  -e 's/Priority support/Öncelikli destek/g' \
+  -e 's/Ad-free experience/Reklamsız deneyim/g' \
+  -e 's/All future updates included/Tüm gelecek güncellemeler dahil/g' \
+  -e 's/7 Days Completely Free!/7 Gün Tamamen Ücretsiz!/g' \
+  -e 's/No credit card required during trial/Deneme sırasında kredi kartı gerekmez/g' \
+  -e 's/Cancel anytime\./İstediğiniz zaman iptal edin./g' \
+  -e 's/Start Free Trial/Ücretsiz Denemeyi Başlat/g' \
+  -e 's/What Parents Are Saying/Ebeveynler Ne Diyor/g' \
+  -e 's/Join happy families already using Kids Habit Builder/Alışkanlık Ustasını kullanan mutlu ailelere katılın/g' \
+  -e 's/Safe, Secure, Trusted/Güvenli, Emniyetli, Güvenilir/g' \
+  -e 's/COPPA Compliant/COPPA Uyumlu/g' \
+  -e 's/Child safety first/Çocuk güvenliği öncelikli/g' \
+  -e 's/Data privacy protected/Veri gizliliği korumalı/g' \
+  -e 's/No Ads/Reklam Yok/g' \
+  -e 's/100% ad-free experience/100% reklamsız deneyim/g' \
+  -e 's/Encrypted/Şifreli/g' \
+  -e 's/Bank-level security/Banka düzeyinde güvenlik/g' \
+  -e 's/Ready to Transform Your Family Routine?/Aile Rutininizi Dönüştürmeye Hazır mısınız?/g' \
+  -e 's/Available on iOS and Android/iOS ve Android'\''da kullanılabilir/g' \
+  -e 's/Part of the GojoApps family\./GojoApps ailesinin bir parçası./g' \
+  -e 's/Building positive habits, one task at a time\./Bir seferde bir görev, pozitif alışkanlıklar oluşturma./g' \
+  -e 's/Product/Ürün/g' \
+  -e 's/Download/İndir/g' \
+  -e 's/Help Center/Yardım Merkezi/g' \
+  -e 's/Contact Us/Bize Ulaşın/g' \
+  -e 's/Legal/Yasal/g' \
+  -e 's/Privacy Policy/Gizlilik Politikası/g' \
+  -e 's/Terms of Service/Kullanım Koşulları/g' \
+  -e 's/Child Safety/Çocuk Güvenliği/g' \
+  index-tr-temp.html

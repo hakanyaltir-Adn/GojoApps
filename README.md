@@ -180,6 +180,18 @@ All pages include:
 
 ---
 
+## 🎉 Recent Updates
+
+### November 2, 2025 - v2.1
+- ✅ Fixed logo size issue (optimized from 955KB to 4.6KB)
+- ✅ Complete Turkish localization for all pages
+- ✅ Kids Habit Builder Turkish landing page (`index-tr.html`)
+- ✅ Consistent design across English and Turkish versions
+- ✅ Mobile-responsive navigation with hamburger menu
+- ✅ All legal pages (Privacy Policy, Terms) ready
+
+---
+
 **Last Updated:** November 2, 2025
-**Version:** 2.0
+**Version:** 2.1
 **Status:** ✅ Production Ready

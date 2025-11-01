@@ -3,34 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GojoApps</title>
+  <title>GojoApps - Hayatı kolaylaştıran uygulamalar</title>
+  <meta name="description" content="Günlük yaşamınızı kolaylaştırmak için tasarlanmış yenilikçi mobil uygulamaları keşfedin. Aile uygulamaları, verimlilik araçları ve daha fazlası." />
+  <meta name="keywords" content="mobil uygulamalar, aile uygulamaları, verimlilik, iOS, Android, alışkanlık takibi" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="GojoApps - Hayatı kolaylaştıran uygulamalar" />
+  <meta property="og:description" content="Aileler ve bireyler için yenilikçi mobil uygulamalar" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hakanyaltir-adn.github.io/GojoApps/index-tr.html" />
+  
+  <!-- Stylesheets & Fonts -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#7C3AED" />
 </head>
 <body>
+  <!-- Header with Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo">
         <a href="index-tr.html">
-          <img src="assets/img/gojoapps-logo.png" alt="GojoApps Logo" class="logo-small" />
+          <img src="assets/img/gojoapps-logo-small.png" alt="GojoApps Logo" />
+          <span class="logo-text">GojoApps</span>
         </a>
       </div>
-      <ul class="nav-links">
-        <li><a href="apps-tr.html">Uygulamalar</a></li>
-        <li><a href="support-tr.html">Destek</a></li>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#apps">Uygulamalar</a></li>
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#about">Hakkımızda</a></li>
         <li><a href="index.html">🇬🇧 English</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="home-content">
-    <img src="assets/img/gojoapps-logo.png" alt="GojoApps Logo" class="logo-centered" />
-    <h1>GojoApps</h1>
-    <p>Hayatı kolaylaştıran uygulamalar.</p>
-    <div class="button-group">
-      <a href="apps-tr.html" class="btn">Uygulamalar</a>
-      <a href="support-tr.html" class="btn">Destek</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hayatı kolaylaştıran uygulamalar</h1>
+      <p class="hero-subtitle">
+        Gerçek sorunlara çözüm üreten güzel, sezgisel mobil uygulamalar geliştiriyoruz. 
+        Aile yönetiminden verimlilik araçlarına — özenle tasarlanmış uygulamaları keşfedin.
+      </p>
+      <div class="hero-buttons">
+        <a href="#apps" class="btn btn-primary btn-large">Uygulamalarımızı Keşfedin</a>
+        <a href="#about" class="btn btn-secondary btn-large">Daha Fazla Bilgi</a>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Apps Section -->
+  <section id="apps" class="apps-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Uygulamalarımız</h2>
+        <p class="section-description">
+          Modern aileler ve bireyler için yenilikçi çözümler
+        </p>
+      </div>
+      
+      <div class="apps-grid">
+        <!-- Kids Habit Builder App Card -->
+        <div class="app-card">
+          <div class="app-card-image" style="background: linear-gradient(135deg, #F5F3FF 0%, #7C3AED 100%);">
+            <!-- Placeholder for app screenshot -->
+          </div>
+          <div class="app-card-content">
+            <div class="app-card-header">
+              <div>
+                <span class="app-category">👨‍👩‍👧‍👦 Aile & Eğitim</span>
+                <h3>Alışkanlık Ustası</h3>
+              </div>
+            </div>
+            
+            <div class="app-status">
+              <div class="status-badge"></div>
+              <span>Yakında - Kasım 2025</span>
+            </div>
+            
+            <p class="app-description">
+              Çocuklarınızın oyunlaştırma yoluyla pozitif alışkanlıklar geliştirmesine yardımcı olun. 
+              Görevler belirleyin, başarıları ödüllendirin ve onların büyümesini izleyin — ebeveynlerin 
+              kontrol edebildiği eğlenceli, çocuk dostu bir ortamda.
+            </p>
+            
+            <div class="app-features">
+              <span class="feature-tag">✨ Oyunlaştırma</span>
+              <span class="feature-tag">🏆 Ödül Sistemi</span>
+              <span class="feature-tag">👪 Çoklu Çocuk Desteği</span>
+              <span class="feature-tag">🔒 COPPA Uyumlu</span>
+              <span class="feature-tag">🌍 Türkçe & İngilizce</span>
+            </div>
+            
+            <a href="apps/kids-habit-builder/index-tr.html" class="app-link">
+              Daha Fazla Bilgi →
+            </a>
+          </div>
+        </div>
+        
+        <!-- Placeholder for Future Apps -->
+        <div class="app-card" style="opacity: 0.7; cursor: default;">
+          <div class="app-card-image" style="background: linear-gradient(135deg, #F0F9FF 0%, #10B981 100%);">
+          </div>
+          <div class="app-card-content">
+            <span class="app-category">🚀 Yakında</span>
+            <h3>Daha Fazla Uygulama Geliyor</h3>
+            <p class="app-description">
+              Heyecan verici yeni projeler üzerinde çalışıyoruz. Güncellemeler için takipte kalın!
+            </p>
+            <div class="app-features">
+              <span class="feature-tag">📱 Mobil Öncelikli</span>
+              <span class="feature-tag">🎯 Sorun Çözücü</span>
+              <span class="feature-tag">💜 Özenle Yapıldı</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Neden Uygulamalarımızı Tercih Etmelisiniz?</h2>
+        <p class="section-description">
+          Modern teknoloji ve kullanıcı deneyimi göz önünde bulundurularak geliştirildi
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Güzel Tasarım</h3>
+          <p>Kullanıcıların bayıldığı modern, sezgisel arayüzler. Her piksel önemlidir.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Gizlilik Öncelikli</h3>
+          <p>Verileriniz sizindir. GDPR, COPPA uyumlu. Takip yok, reklam yok.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Hızlı & Güvenilir</h3>
+          <p>Sorunsuz performans için son teknoloji ile geliştirildi.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Çoklu Dil</h3>
+          <p>Otomatik konum tespiti ile Türkçe ve İngilizce desteği.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Platform Bağımsız</h3>
+          <p>iOS ve Android'de kullanılabilir. Tek hesap, tüm cihazlar.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💜</div>
+          <h3>Özenle Yapıldı</h3>
+          <p>Her özellik, gerçek sorunları çözmek için düşünülerek tasarlandı.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h2 style="margin-bottom: 1.5rem;">GojoApps Hakkında</h2>
+      <p style="font-size: 1.125rem; color: var(--gray-text); line-height: 1.8; margin-bottom: 2rem;">
+        Fark yaratan mobil uygulamalar yaratma tutkusuyla dolu bir ekibiz. 
+        Misyonumuz basit: güzel, kullanımı kolay çözümlerle gerçek sorunları çözmek.
+        Ailelerin daha iyi alışkanlıklar geliştirmesine yardımcı olmak ya da günlük verimliliği 
+        artırmak olsun — en önemli olan şeye odaklanıyoruz: uygulamalarımızı kullanan insanlar.
+      </p>
+      <p style="font-size: 1.125rem; color: var(--gray-text); line-height: 1.8;">
+        Oluşturduğumuz her uygulama detaylara özen, kullanıcı gizliliği ve modern teknoloji 
+        ile inşa edilmiştir. Şeffaf geliştirmeye, kullanıcı geri bildirimlerine ve sürekli 
+        iyileştirmeye inanıyoruz.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="container">
+    <div class="cta-section">
+      <h2>Uygulamalarımızı Denemek İster misiniz?</h2>
+      <p>GojoApps ile hayatlarını kolaylaştıran binlerce kullanıcıya katılın</p>
+      <div class="hero-buttons">
+        <a href="#apps" class="btn btn-secondary btn-large">Tüm Uygulamaları Görüntüle</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>GojoApps</h3>
+        <p style="color: #9CA3AF; margin-top: 0.5rem;">
+          Hayatı kolaylaştıran uygulamalar.
+          Özenle yapıldı, herkes için tasarlandı.
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Uygulamalar</h3>
+        <ul>
+          <li><a href="apps/kids-habit-builder/index-tr.html">Alışkanlık Ustası</a></li>
+          <li><a href="#apps">Daha Fazlası Yakında</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Şirket</h3>
+        <ul>
+          <li><a href="#about">Hakkımızda</a></li>
+          <li><a href="support-tr.html">Destek</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Yasal</h3>
+        <ul>
+          <li><a href="apps/kids-habit-builder/privacy.html">Gizlilik Politikası</a></li>
+          <li><a href="apps/kids-habit-builder/terms.html">Kullanım Koşulları</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 GojoApps. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            document.getElementById('navLinks').classList.remove('active');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
