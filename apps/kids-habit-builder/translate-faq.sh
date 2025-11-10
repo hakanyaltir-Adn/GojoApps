@@ -1,0 +1,50 @@
+#!/bin/bash
+sed -i '' \
+  -e 's/<h2 class="faq-category-title">🌟 General<\/h2>/<h2 class="faq-category-title">🌟 Genel<\/h2>/g' \
+  -e 's/<h2 class="faq-category-title">🔒 Security & Privacy<\/h2>/<h2 class="faq-category-title">🔒 Güvenlik \& Gizlilik<\/h2>/g' \
+  -e 's/<h2 class="faq-category-title">📱 Usage<\/h2>/<h2 class="faq-category-title">📱 Kullanım<\/h2>/g' \
+  -e 's/<h2 class="faq-category-title">⚙️ Technical<\/h2>/<h2 class="faq-category-title">⚙️ Teknik<\/h2>/g' \
+  -e 's/<h2 class="faq-category-title">💳 Subscription<\/h2>/<h2 class="faq-category-title">💳 Abonelik<\/h2>/g' \
+  -e 's/<h2 class="faq-category-title">💬 Support<\/h2>/<h2 class="faq-category-title">💬 Destek<\/h2>/g' \
+  -e 's/Is the app free?/Uygulama ücretsiz mi?/g' \
+  -e 's/Yes! We offer a 7-day free trial. After the trial, it'\''s \$2.99\/month or \$20.81\/year (42% off). You can cancel anytime./Evet! 7 günlük ücretsiz deneme sunuyoruz. Deneme sonrası aylık \$2.99 veya yıllık \$20.81 (42% indirimli). İstediğiniz zaman iptal edebilirsiniz./g' \
+  -e 's/What age group is this suitable for?/Hangi yaş grubu için uygun?/g' \
+  -e 's/Perfect for children aged 4-14. Tasks can be customized based on age group./4-14 yaş arası çocuklar için idealdir. Görevler yaş grubuna göre özelleştirilebilir./g' \
+  -e 's/How many child profiles can I add?/Kaç çocuk profili eklenebilir?/g' \
+  -e 's/Unlimited! Create as many child profiles as you need./Sınırsız! İstediğiniz kadar çocuk profili oluşturabilirsiniz./g' \
+  -e 's/Does it work offline?/Offline çalışır mı?/g' \
+  -e 's/Yes, basic features work offline. Data syncs when you'\''re back online./Evet, temel özellikler offline kullanılabilir. Veriler internet bağlantısı olduğunda senkronize edilir./g' \
+  -e 's/Is my child'\''s data safe?/Çocuk verileri güvende mi?/g' \
+  -e 's/Absolutely! We use Firebase'\''s secure infrastructure. Child data is encrypted and never shared with third parties./Kesinlikle! Firebase güvenli altyapısı kullanıyoruz. Çocuk verileri şifrelenir ve asla üçüncü taraflarla paylaşılmaz./g' \
+  -e 's/Can children bypass parent approval?/Çocuklar ebeveyn iznini bypass edebilir mi?/g' \
+  -e 's/No. All sensitive actions (profile deletion, settings changes) require parent verification./Hayır. Tüm hassas işlemler (profil silme, ayar değişikliği) ebeveyn doğrulaması gerektirir./g' \
+  -e 's/Can children make in-app purchases?/Çocuklar uygulama içi satın alım yapabilir mi?/g' \
+  -e 's/No. All payments and subscriptions can only be made from the parent account./Hayır. Tüm ödeme ve abonelik işlemleri sadece ebeveyn hesabından yapılabilir./g' \
+  -e 's/How do I create tasks?/Görevler nasıl oluşturulur?/g' \
+  -e 's/From the parent account, tap the "+" button, enter task details, choose a reward, and save./Ebeveyn hesabından "+" butonuna tıklayın, görev detaylarını girin, ödül seçin ve kaydedin./g' \
+  -e 's/How do children claim their rewards?/Çocuklar ödüllerini nasıl alır?/g' \
+  -e 's/After completing tasks, children can request rewards. Parent approval is required./Çocuk görevleri tamamladıktan sonra ödül talep eder. Ebeveyn onaylaması gerekir./g' \
+  -e 's/How do notifications work?/Bildirimler nasıl çalışır?/g' \
+  -e 's/Daily task reminders and completion notifications are sent. You can customize them in settings./Günlük görev hatırlatıcıları ve tamamlama bildirimleri gönderilir. Ayarlardan özelleştirilebilir./g' \
+  -e 's/How do I change the language?/Dil nasıl değiştirilir?/g' \
+  -e 's/Switch between Turkish and English from the Settings menu./Ayarlar menüsünden Türkçe ve İngilizce arasında geçiş yapabilirsiniz./g' \
+  -e 's/Which devices does it work on?/Hangi cihazlarda çalışır?/g' \
+  -e 's/Android 8.0+ and iOS 13.0+ devices./Android 8.0+ ve iOS 13.0+ cihazlarda çalışır./g' \
+  -e 's/Is internet connection required?/İnternet bağlantısı şart mı?/g' \
+  -e 's/No, basic features work offline. Internet is needed for synchronization./Hayır, temel özellikler offline kullanılabilir. Senkronizasyon için internet gerekir./g' \
+  -e 's/Will I lose my data?/Verilerim kaybolur mu?/g' \
+  -e 's/No. All data is stored in the cloud and automatically backed up./Hayır. Tüm veriler bulut tabanlı depolanır ve otomatik yedeklenir./g' \
+  -e 's/Do I get charged during the trial?/Deneme süresinde ücret alınır mı?/g' \
+  -e 's/No. The first 7 days are completely free. You can cancel anytime./Hayır. İlk 7 gün tamamen ücretsizdir. İstediğiniz zaman iptal edebilirsiniz./g' \
+  -e 's/How do I cancel?/İptal nasıl yapılır?/g' \
+  -e 's/Easily cancel from Google Play or App Store subscription settings./Google Play veya App Store abonelik ayarlarından kolayca iptal edebilirsiniz./g' \
+  -e 's/Can I get a refund?/Geri ödeme alabilir miyim?/g' \
+  -e 's/According to Store policies, you can request a refund for unused time./Store politikalarına göre, kullanılmayan süre için iade talep edebilirsiniz./g' \
+  -e 's/What should I do if I have a problem?/Sorun yaşarsam ne yapmalıyım?/g' \
+  -e 's/Email us at kidshabitbuilder@gmail.com. We respond within 24 hours./kidshabitbuilder@gmail.com adresine email gönderin. 24 saat içinde yanıt veririz./g' \
+  -e 's/Can I suggest a feature?/Özellik önerisi yapabilir miyim?/g' \
+  -e 's/Absolutely! We welcome your feedback via email./Kesinlikle! Geri bildirimlerinizi email ile bekliyoruz./g' \
+  -e 's/Still have questions?/Hala sorunuz mu var?/g' \
+  -e 's/We'\''re here to help! Contact us anytime./Yardım için buradayız! Bize istediğiniz zaman ulaşın./g' \
+  -e 's/Email Us/Bize Email Gönderin/g' \
+  faq-tr.html

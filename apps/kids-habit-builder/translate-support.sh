@@ -1,0 +1,74 @@
+#!/bin/bash
+sed -i '' \
+  -e 's/<html lang="en">/<html lang="tr">/g' \
+  -e 's/<title>Support - Kids Habit Builder<\/title>/<title>Destek - Alışkanlık Ustası<\/title>/g' \
+  -e 's/Get help with Kids Habit Builder/Alışkanlık Ustası ile ilgili yardım alın/g' \
+  -e 's/Contact support, find answers, and learn how to make the most of the app./Destek ekibiyle iletişime geçin, cevaplar bulun ve uygulamadan en iyi şekilde yararlanmayı öğrenin./g' \
+  -e 's/<li><a href="index.html">← Back to Kids Habit Builder<\/a><\/li>/<li><a href="index-tr.html">← Alışkanlık Ustası'\''na Dön<\/a><\/li>/g' \
+  -e 's/<li><a href="support-tr.html">🇹�� Türkçe<\/a><\/li>/<li><a href="support.html">🇬🇧 English<\/a><\/li>/g' \
+  -e 's/How Can We Help You?/Size Nasıl Yardımcı Olabiliriz?/g' \
+  -e 's/We'\''re here to support you and your family on your habit-building journey/Alışkanlık oluşturma yolculuğunuzda size ve ailenize destek olmak için buradayız/g' \
+  -e 's/>FAQ</>SSS</g' \
+  -e 's/Find quick answers to the most common questions about Kids Habit Builder/Alışkanlık Ustası hakkında en yaygın soruların hızlı cevaplarını bulun/g' \
+  -e 's/View FAQ/SSS'\''yi Görüntüle/g' \
+  -e 's/>Email Support</>Email Desteği</g' \
+  -e 's/Get personalized help from our support team. We respond within 24 hours./Destek ekibimizden kişiselleştirilmiş yardım alın. 24 saat içinde yanıt veririz./g' \
+  -e 's/Email Us/Bize Email Gönderin/g' \
+  -e 's/>App Guide</>Uygulama Rehberi</g' \
+  -e 's/Learn how to make the most of all features with our step-by-step guides/Adım adım rehberlerimizle tüm özelliklerden en iyi şekilde nasıl yararlanacağınızı öğrenin/g' \
+  -e 's/View Guides/Rehberleri Görüntüle/g' \
+  -e 's/>📬 Contact Us</>📬 Bize Ulaşın</g' \
+  -e 's/Have a question, suggestion, or issue/Bir sorunuz, öneriniz veya sorununuz mu var/g' \
+  -e 's/We'\''d love to hear from you!/Sizden haber almak isteriz!/g' \
+  -e 's/<strong>Email:<\/strong>/<strong>Email:<\/strong>/g' \
+  -e 's/<strong>Response Time:<\/strong> Within 24 hours (usually much faster!)/<strong>Yanıt Süresi:<\/strong> 24 saat içinde (genellikle çok daha hızlı!)/g' \
+  -e 's/<strong>Website:<\/strong>/<strong>Website:<\/strong>/g' \
+  -e 's/>📚 Quick Start Guides</>📚 Hızlı Başlangıç Rehberleri</g' \
+  -e 's/>Getting Started</>Başlangıç</g' \
+  -e 's/Download the app from App Store or Google Play/Uygulamayı App Store veya Google Play'\''den indirin/g' \
+  -e 's/Create a parent account/Ebeveyn hesabı oluşturun/g' \
+  -e 's/Add your children'\''s profiles/Çocuklarınızın profillerini ekleyin/g' \
+  -e 's/Set up your first tasks and rewards/İlk görevlerinizi ve ödüllerinizi ayarlayın/g' \
+  -e 's/Start building positive habits!/Pozitif alışkanlıklar oluşturmaya başlayın!/g' \
+  -e 's/>Creating Tasks</>Görev Oluşturma</g' \
+  -e 's/Tap the "+" button in parent mode/Ebeveyn modunda "+" butonuna tıklayın/g' \
+  -e 's/Choose task type (daily\/weekly\/monthly)/Görev türünü seçin (günlük\/haftalık\/aylık)/g' \
+  -e 's/Enter task name and description/Görev adı ve açıklamasını girin/g' \
+  -e 's/Set point value/Puan değerini belirleyin/g' \
+  -e 's/Assign to child(ren)/Çocuk(lar)a atayın/g' \
+  -e 's/>Setting Up Rewards</>Ödül Ayarlama</g' \
+  -e 's/Go to Rewards section in parent panel/Ebeveyn panelinde Ödüller bölümüne gidin/g' \
+  -e 's/Tap "Add Reward"/Tap "Ödül Ekle"/g' \
+  -e 's/Enter reward name and description/Ödül adı ve açıklamasını girin/g' \
+  -e 's/Set required points/Gerekli puanı belirleyin/g' \
+  -e 's/Add a photo (optional)/Bir fotoğraf ekleyin (opsiyonel)/g' \
+  -e 's/>Approving Tasks</>Görev Onaylama</g' \
+  -e 's/Check notifications for completed tasks/Tamamlanan görevler için bildirimleri kontrol edin/g' \
+  -e 's/Review the task details/Görev detaylarını inceleyin/g' \
+  -e 's/Check attached photo if any/Varsa ekli fotoğrafı kontrol edin/g' \
+  -e 's/Approve or reject with feedback/Geri bildirimle onaylayın veya reddedin/g' \
+  -e 's/Points awarded automatically/Puanlar otomatik olarak verilir/g' \
+  -e 's/>🔧 Common Issues & Solutions</>🔧 Yaygın Sorunlar & Çözümler</g' \
+  -e 's/>App won'\''t sync</>Uygulama senkronize olmuyor</g' \
+  -e 's/Check your internet connection/İnternet bağlantınızı kontrol edin/g' \
+  -e 's/Go to Settings → Sync Now/Ayarlar → Şimdi Senkronize Et'\''e gidin/g' \
+  -e 's/If issue persists, log out and log back in/Sorun devam ederse çıkış yapın ve tekrar giriş yapın/g' \
+  -e 's/>Forgot password</>Şifremi unuttum</g' \
+  -e 's/Tap "Forgot Password" on login screen/"Şifremi Unuttum"a tıklayın/g' \
+  -e 's/Enter your email/Email adresinizi girin/g' \
+  -e 's/Check your inbox for reset link/Sıfırlama linki için gelen kutunuzu kontrol edin/g' \
+  -e 's/>Notifications not working</>Bildirimler çalışmıyor</g' \
+  -e 's/Check device Settings → Notifications → Kids Habit Builder/Cihaz Ayarları → Bildirimler → Alışkanlık Ustası'\''nı kontrol edin/g' \
+  -e 's/Ensure notifications are enabled/Bildirimlerin etkin olduğundan emin olun/g' \
+  -e 's/Also check Do Not Disturb mode/Ayrıca Rahatsız Etme modunu kontrol edin/g' \
+  -e 's/>Child can'\''t log in</>Çocuk giriş yapamıyor</g' \
+  -e 's/Child profiles don'\''t have passwords/Çocuk profilleri şifre gerektirmez/g' \
+  -e 's/Use the parent account to switch profiles from the Profile Selection screen/Profil Seçim ekranından profil değiştirmek için ebeveyn hesabını kullanın/g' \
+  -e 's/>Quick Links</>Hızlı Linkler</g' \
+  -e 's/>Privacy Policy</>Gizlilik Politikası</g' \
+  -e 's/>Terms of Service</>Kullanım Koşulları</g' \
+  -e 's/>Back to Home</>Ana Sayfaya Dön</g' \
+  -e 's/>Still Need Help?</>Hala Yardıma İhtiyacınız Var?</g' \
+  -e 's/Our support team is ready to assist you/Destek ekibimiz size yardımcı olmaya hazır/g' \
+  -e 's/📧 Contact Support/📧 Destek Ekibiyle İletişim/g' \
+  support-tr.html

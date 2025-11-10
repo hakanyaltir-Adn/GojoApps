@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sıkça Sorulan Sorular - Alışkanlık Ustası</title>
+  <meta name="description" content="Alışkanlık Ustası hakkında sıkça sorulan sorular - Fiyatlandırma, özellikler, güvenlik ve daha fazlası." />
+  
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .faq-category {
+      margin-bottom: 3rem;
+    }
+    .faq-category-title {
+      color: var(--primary-purple);
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--primary-purple);
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s ease;
+    }
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .faq-question {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: var(--dark-text);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .faq-question::before {
+      content: "Q:";
+      color: var(--primary-purple);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .faq-answer {
+      color: var(--gray-text);
+      line-height: 1.7;
+      padding-left: 2rem;
+    }
+    .faq-answer::before {
+      content: "A:";
+      color: var(--fresh-green);
+      font-weight: 700;
+      margin-left: -2rem;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../../index.html">
+          <img src="../../assets/img/gojoapps-logo-small.png" alt="GojoApps Logo" />
+          <span class="logo-text">GojoApps</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index-tr.html">← Alışkanlık Ustası'na Dön</a></li>
+        <li><a href="faq.html">🇬🇧 English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="faq-container">
+    <h1 style="text-align: center; margin-bottom: 0.5rem;">Sıkça Sorulan Sorular</h1>
+    <p style="text-align: center; color: var(--gray-text); margin-bottom: 3rem;">
+      Alışkanlık Ustası hakkında bilmeniz gereken her şey
+    </p>
+
+    <!-- GENERAL -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">🌟 Genel</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Uygulama ücretsiz mi?</div>
+        <div class="faq-answer">Evet! 7 günlük ücretsiz deneme sunuyoruz. Deneme sonrası aylık $2.99 veya yıllık $20.81 (42% indirimli). İstediğiniz zaman iptal edebilirsiniz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Hangi yaş grubu için uygun?</div>
+        <div class="faq-answer">4-14 yaş arası çocuklar için idealdir. Görevler yaş grubuna göre özelleştirilebilir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Kaç çocuk profili eklenebilir?</div>
+        <div class="faq-answer">Sınırsız! İstediğiniz kadar çocuk profili oluşturabilirsiniz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Offline çalışır mı?</div>
+        <div class="faq-answer">Evet, temel özellikler offline kullanılabilir. Veriler internet bağlantısı olduğunda senkronize edilir.</div>
+      </div>
+    </div>
+
+    <!-- SECURITY & PRIVACY -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">🔒 Güvenlik & Gizlilik</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Çocuk verileri güvende mi?</div>
+        <div class="faq-answer">Kesinlikle! Firebase güvenli altyapısı kullanıyoruz. Çocuk verileri şifrelenir ve asla üçüncü taraflarla paylaşılmaz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Çocuklar ebeveyn iznini bypass edebilir mi?</div>
+        <div class="faq-answer">Hayır. Tüm hassas işlemler (profil silme, ayar değişikliği) ebeveyn doğrulaması gerektirir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Çocuklar uygulama içi satın alım yapabilir mi?</div>
+        <div class="faq-answer">Hayır. Tüm ödeme ve abonelik işlemleri sadece ebeveyn hesabından yapılabilir.</div>
+      </div>
+    </div>
+
+    <!-- USAGE -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">📱 Kullanım</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Görevler nasıl oluşturulur?</div>
+        <div class="faq-answer">Ebeveyn hesabından "+" butonuna tıklayın, görev detaylarını girin, ödül seçin ve kaydedin.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Çocuklar ödüllerini nasıl alır?</div>
+        <div class="faq-answer">Çocuk görevleri tamamladıktan sonra ödül talep eder. Ebeveyn onaylaması gerekir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Bildirimler nasıl çalışır?</div>
+        <div class="faq-answer">Günlük görev hatırlatıcıları ve tamamlama bildirimleri gönderilir. Ayarlardan özelleştirilebilir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Dil nasıl değiştirilir?</div>
+        <div class="faq-answer">Ayarlar menüsünden Türkçe ve İngilizce arasında geçiş yapabilirsiniz.</div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">⚙️ Teknik</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Hangi cihazlarda çalışır?</div>
+        <div class="faq-answer">Android 8.0+ ve iOS 13.0+ cihazlarda çalışır.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">İnternet bağlantısı şart mı?</div>
+        <div class="faq-answer">Hayır, temel özellikler offline kullanılabilir. Senkronizasyon için internet gerekir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Verilerim kaybolur mu?</div>
+        <div class="faq-answer">Hayır. Tüm veriler bulut tabanlı depolanır ve otomatik yedeklenir.</div>
+      </div>
+    </div>
+
+    <!-- SUBSCRIPTION -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">💳 Abonelik</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Deneme süresinde ücret alınır mı?</div>
+        <div class="faq-answer">Hayır. İlk 7 gün tamamen ücretsizdir. İstediğiniz zaman iptal edebilirsiniz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">İptal nasıl yapılır?</div>
+        <div class="faq-answer">Google Play veya App Store abonelik ayarlarından kolayca iptal edebilirsiniz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Geri ödeme alabilir miyim?</div>
+        <div class="faq-answer">Store politikalarına göre, kullanılmayan süre için iade talep edebilirsiniz.</div>
+      </div>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="faq-category">
+      <h2 class="faq-category-title">💬 Destek</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Sorun yaşarsam ne yapmalıyım?</div>
+        <div class="faq-answer">kidshabitbuilder@gmail.com adresine email gönderin. 24 saat içinde yanıt veririz.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Özellik önerisi yapabilir miyim?</div>
+        <div class="faq-answer">Kesinlikle! Geri bildirimlerinizi email ile bekliyoruz.</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align: center; margin-top: 4rem; padding: 2rem; background: var(--light-purple-bg); border-radius: var(--radius-lg);">
+      <h3 style="margin-bottom: 1rem;">Hala sorunuz mu var?</h3>
+      <p style="color: var(--gray-text); margin-bottom: 1.5rem;">
+        Yardım için buradayız! Bize istediğiniz zaman ulaşın.
+      </p>
+      <a href="mailto:kidshabitbuilder@gmail.com" class="btn btn-primary">Bize Email Gönderin</a>
+    </div>
+  </div>
+
+  <footer style="margin-top: 4rem;">
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kids Habit Builder by GojoApps. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
